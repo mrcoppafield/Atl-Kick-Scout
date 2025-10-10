@@ -19,11 +19,13 @@
         .feedback { font-size: 1.1em; margin: 10px 0; }
         .share-btn { background: #E4405F; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin: 10px; }
         footer { margin-top: 40px; color: #fff; font-size: 0.9em; }
+        footer a { color: #E4405F; text-decoration: none; }
+        .premium-btn { background: #FFD700; color: #333; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; margin: 10px; }
     </style>
 </head>
 <body>
     <h1>ATL Kick Scout</h1>
-    <p class="subtitle">Snap your shoes, pick your ATL hood, and get a 1-10 rating. Peach State drip! üçë</p>
+    <p class="subtitle">Snap your shoes, pick your ATL hood, and get a 1-10 rating. Peach State drip! </p>
     
     <div class="upload-area">
         <input type="file" id="shoeUpload" accept="image/*">
@@ -50,8 +52,12 @@
     </div>
     
     <footer>
-        <p>Built for ATL sneakerheads | Premium unlocks: Local cobbler recs & ad-free | Coming soon: $4.99/mo</p>
+        <p>Built for ATL sneakerheads | Premium unlocks: Local cobbler recs & ad-free | <a href="https://instagram.com/mrcoppafield">@mrcoppafield</a> | © 2025 mrcoppafield</p>
     </footer>
+
+    <div style="margin: 20px;">
+        <button class="premium-btn" onclick="window.location='https://stripe.com/payment-link';">Unlock Premium ($4.99/mo)</button>
+    </div>
 
     <script>
         const upload = document.getElementById('shoeUpload');
@@ -86,11 +92,11 @@
             const rating = Math.floor(Math.random() * 10) + 1;
             const hood = neighborhood.value;
             const feedbacks = {
-                midtown: rating >= 7 ? "Midtown drip elite‚Äîyour kicks own Peachtree!" : "Midtown vibe needs heat. Cop some at Ponce City Market.",
-                'vine-city': rating >= 7 ? "Vine City soul in those soles‚Äîstepping with history!" : "Vine kicks need shine. Try a West End cleaner.",
-                buckhead: rating >= 7 ? "Buckhead boss status‚Äîyour kicks scream Lenox luxury!" : "Buckhead needs bolder. Hit Phipps for inspo.",
-                'little-five-points': rating >= 7 ? "L5P heatwave‚Äîyour kicks match the street art!" : "L5P vibe‚Äôs off. Thrift some retro at Euclid Ave.",
-                trap: rating >= 7 ? "Trap district fire‚Äîyour kicks got that street cred!" : "Trap needs more sauce. Customize at a local shop."
+                midtown: rating >= 7 ? "Midtown drip eliteóyour kicks own Peachtree!" : "Midtown vibe needs heat. Cop some at Ponce City Market.",
+                'vine-city': rating >= 7 ? "Vine City soul in those solesóstepping with history!" : "Vine kicks need shine. Try a West End cleaner.",
+                buckhead: rating >= 7 ? "Buckhead boss statusóyour kicks scream Lenox luxury!" : "Buckhead needs bolder. Hit Phipps for inspo.",
+                'little-five-points': rating >= 7 ? "L5P heatwaveóyour kicks match the street art!" : "L5P vibeís off. Thrift some retro at Euclid Ave.",
+                trap: rating >= 7 ? "Trap district fireóyour kicks got that street cred!" : "Trap needs more sauce. Customize at a local shop."
             };
             
             ratingEl.textContent = rating + '/10';
