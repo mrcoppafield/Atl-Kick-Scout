@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATL Kick Scout - Rate Your Atlanta Kicks 1-10</title>
+    <title>ATL-KICK-SCOUT - Rate Your Atlanta Kicks 1-10</title>
     <style>
         body { font-family: 'Arial', sans-serif; background: linear-gradient(to bottom, #FF6B35, #F7931E); color: #333; margin: 0; padding: 20px; text-align: center; }
         h1 { color: #fff; font-size: 2.5em; margin-bottom: 10px; }
@@ -21,25 +21,27 @@
         footer { margin-top: 40px; color: #fff; font-size: 0.9em; }
         footer a { color: #E4405F; text-decoration: none; }
         .premium-btn { background: #FFD700; color: #333; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; margin: 10px; }
+        .premium-section { display: none; margin: 20px; padding: 20px; background: rgba(255,255,255,0.9); border-radius: 10px; }
+        .gem { margin: 10px; padding: 10px; border-bottom: 1px solid #ddd; }
     </style>
 </head>
 <body>
-    <h1>ATL Kick Scout</h1>
-    <p class="subtitle">Snap your shoes, pick your ATL hood, and get a 1-10 rating. Peach State drip! </p>
+    <h1>ATL-KICK-SCOUT</h1>
+    <p class="subtitle">Submit your kicks, rate others, join the sneaker coffee shop! üçë</p>
     
     <div class="upload-area">
         <input type="file" id="shoeUpload" accept="image/*">
-        <button class="upload-btn" onclick="document.getElementById('shoeUpload').click()">Upload Shoe Pic</button>
+        <button class="upload-btn" onclick="window.location='https://docs.google.com/forms/d/e/1FAIpQLSeMaG3f646Sz4Wex0OuuyirYUWLp26g3kVqJJ8RqGGvSKwTvw/viewform?usp=dialog';">Submit Shoe to Gallery</button>
         <img id="preview" class="preview" alt="Shoe Preview">
     </div>
     
     <select id="neighborhood">
-        <option value="">Select Your ATL Hood</option>
-        <option value="midtown">Midtown (Urban Drip)</option>
-        <option value="vine-city">Vine City (Soulful Kicks)</option>
-        <option value="buckhead">Buckhead (Luxe Steppers)</option>
-        <option value="little-five-points">Little 5 Points (Eclectic Heat)</option>
-        <option value="trap">Trap District (Street Fire)</option>
+        <option value="">Select Your ATL Zone</option>
+        <option value="zone1">Zone 1 (Bankhead)</option>
+        <option value="zone2">Zone 2 (Midtown)</option>
+        <option value="zone3">Zone 3 (Buckhead)</option>
+        <option value="zone4">Zone 4 (Decatur)</option>
+        <option value="zone5">Zone 5 (Hapeville)</option>
     </select>
     
     <br>
@@ -52,11 +54,35 @@
     </div>
     
     <footer>
-        <p>Built for ATL sneakerheads | Premium unlocks: Local cobbler recs & ad-free | <a href="https://instagram.com/mrcoppafield">@mrcoppafield</a> | © 2025 mrcoppafield</p>
+        <p>Built for ATL sneakerheads | Premium unlocks: Local gems & ad-free | <a href="https://instagram.com/mrcoppafield">@mrcoppafield</a> | ¬© 2025 mrcoppafield</p>
     </footer>
 
     <div style="margin: 20px;">
         <button class="premium-btn" onclick="window.location='https://stripe.com/payment-link';">Unlock Premium ($4.99/mo)</button>
+    </div>
+
+    <div id="premium" class="premium-section">
+        <h2>Freshman 1st-Team Hidden Gems</h2>
+        <div class="gem">
+            <h3>Sneaker Shops</h3>
+            <p>Wish (Little Five Points): Yeezys, Jordans $50-100. Heet ATL: Customs $60-120. Full Circle ATL: Supreme < $100. ATL Addictions: Chrome Hearts $80-150. Nike Outlet (Woodstock): Retros $50-90.</p>
+        </div>
+        <div class="gem">
+            <h3>Cologne Steals</h3>
+            <p>Fragrance Outlet (Woodstock): Creed $40-70. Perfumania: Armani $30-60. Taj Perfumes: Oils $20-50. Walmart (Gresham Rd): Nautica $10-30. Bloomingdales (Lenox): Testers $50-100.</p>
+        </div>
+        <div class="gem">
+            <h3>Beard Oils</h3>
+            <p>Chattanooga Beard Co.: Smooth $15-20. Black Rebel Beard Co.: Luxurious $20-25. Bevel: Hydrating $15. Honest Amish: Itch relief $10-15. Every Man Jack: Sandalwood $10.</p>
+        </div>
+        <div class="gem">
+            <h3>Cheap Barbers</h3>
+            <p>Gino's Classic: Fades $20-30. The Commodore: $25. Trophy Room: $20-35. Vista: $15-25. Eclectic (Midtown): $20-30.</p>
+        </div>
+        <div class="gem">
+            <h3>Thrift Stores</h3>
+            <p>Rag-O-Rama: Vintage $10-30. The Lucky Exchange: Designer $15-40. Goodwill (Piedmont): $5-20. Value Village (Southside): $5-15. Lost-N-Found: $5-25.</p>
+        </div>
     </div>
 
     <script>
@@ -92,17 +118,17 @@
             const rating = Math.floor(Math.random() * 10) + 1;
             const hood = neighborhood.value;
             const feedbacks = {
-                midtown: rating >= 7 ? "Midtown drip eliteóyour kicks own Peachtree!" : "Midtown vibe needs heat. Cop some at Ponce City Market.",
-                'vine-city': rating >= 7 ? "Vine City soul in those solesóstepping with history!" : "Vine kicks need shine. Try a West End cleaner.",
-                buckhead: rating >= 7 ? "Buckhead boss statusóyour kicks scream Lenox luxury!" : "Buckhead needs bolder. Hit Phipps for inspo.",
-                'little-five-points': rating >= 7 ? "L5P heatwaveóyour kicks match the street art!" : "L5P vibeís off. Thrift some retro at Euclid Ave.",
-                trap: rating >= 7 ? "Trap district fireóyour kicks got that street cred!" : "Trap needs more sauce. Customize at a local shop."
+                zone1: rating >= 7 ? "Zone 1 fire‚ÄîBankhead‚Äôs proud!" : "Zone 1 needs more sauce.",
+                zone2: rating >= 7 ? "Zone 2 elite‚ÄîMidtown owns it!" : "Zone 2 needs heat.",
+                zone3: rating >= 7 ? "Zone 3 luxury‚ÄîBuckhead vibes!" : "Zone 3 needs bolder.",
+                zone4: rating >= 7 ? "Zone 4 drip‚ÄîDecatur loves it!" : "Zone 4‚Äôs off.",
+                zone5: rating >= 7 ? "Zone 5 heat‚ÄîHapeville‚Äôs got you!" : "Zone 5 needs shine."
             };
             
             ratingEl.textContent = rating + '/10';
             feedbackEl.textContent = feedbacks[hood];
             result.style.display = 'block';
-            shareBtn.href = `https://www.instagram.com/?url=${encodeURIComponent(window.location.href)}&text=My ATL Kick Scout rating: ${rating}/10 in ${hood.charAt(0).toUpperCase() + hood.slice(1).replace('-', ' ')}! Tag your crew. #ATLKickScout`;
+            shareBtn.href = `https://www.instagram.com/?url=${encodeURIComponent('https://mrcoppafield.github.io/atlkickscout')}&text=My ATL-KICK-SCOUT rating: ${rating}/10 in ${hood.replace('zone', 'Zone ')}! Tag your crew. #ATLKICKSCOUT`;
         }
 
         function shareToIG() {
