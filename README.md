@@ -1,142 +1,44 @@
-# ATL-KICK-SCOUT 👟
+# ATL-KICK-SCOUT - Atlanta Style Concierge
 
-> **Your Personal Atlanta Style & Lifestyle Guide**  
-> Discover the 404's hidden gems - from fresh kicks to top cuts 🍑
-
-[![Live Site](https://img.shields.io/badge/Live-Site-gold?style=for-the-badge)](https://mrcoppafield.github.io/Atl-Kick-Scout/)
-[![Premium](https://img.shields.io/badge/Premium-$4.99%2Fmo-navy?style=for-the-badge)](https://buy.stripe.com/bJe9ATbEkgfH66F6uaabK00)
-[![Instagram](https://img.shields.io/badge/Instagram-@mrcoppafield-E4405F?style=for-the-badge&logo=instagram)](https://instagram.com/mrcoppafield)
+![ATL-KICK-SCOUT](https://img.shields.io/badge/ATL--Style-Concierge-gold)
+![Version](https://img.shields.io/badge/Version-2.0-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 🎯 Overview
 
-ATL-KICK-SCOUT is an interactive Atlanta lifestyle platform that lets users rate their sneakers based on their ATL zone, discover hidden style gems, and connect with the local sneaker community. Built for ATL sneakerheads who want to showcase their drip and discover the city's best-kept secrets.
+**ATL-KICK-SCOUT** is Atlanta's premier style concierge service that bridges sneaker culture with comprehensive style elevation. What started as a sneaker rating platform has evolved into a full-service style ecosystem for Atlanta's fashion-forward community.
+
+### 🚀 Live Demo
+**[https://mrcoppafield.github.io/Atl-Kick-Scout/](https://mrcoppafield.github.io/Atl-Kick-Scout/)**
 
 ## ✨ Features
 
-### 🆓 Free Features
-- **Zone-Based Rating System** - Rate your kicks 1-10 based on your Atlanta zone (Bankhead, Midtown, Buckhead, Decatur, Hapeville)
-- **Image Upload** - Drag & drop or click to upload sneaker photos
-- **Instant Feedback** - Get zone-specific ratings and feedback
-- **Instagram Sharing** - Share your ratings directly to Instagram Stories
-- **Community Gallery** - Browse submissions from other ATL sneakerheads
-- **Google Forms Integration** - Submit your kicks to the permanent gallery
+### 🔥 Core Services
+- **👟 Kick Rating**: Upload sneakers for instant 1-10 ratings with ATL zone-specific analysis
+- **👔 Full Fit Analysis**: Complete outfit ratings with style breakdown and neighborhood vibe scoring
+- **💎 Style Concierge**: Personalized shopping guides, barber recommendations, and hidden gem access
+- **🗺️ Discover ATL**: Curated maps of Atlanta's best shops, barbers, and sneaker spots
+- **👥 Style Community**: Gallery showcasing Atlanta's fashion trends and user submissions
+- **🎯 1-on-1 Coaching**: Personal style sessions with Atlanta's top fashion experts
 
-### 💎 Premium Features ($4.99/mo)
-Unlock exclusive access to Atlanta's hidden gems:
+### 🏆 Premium Features ($4.99/month)
+- Exclusive access to hidden Atlanta boutiques and sample sales
+- Priority barber booking at top ATL spots
+- Personalized style roadmaps and shopping sessions
+- Event and travel styling services
+- Early access to Atlanta sneaker events
 
-- **Sneaker Shops** - Wish (Little Five Points), Heet ATL, Full Circle ATL, ATL Addictions, Nike Outlet (Woodstock)
-- **Cologne Steals** - Fragrance Outlet, Perfumania, Taj Perfumes, Bloomingdales tester deals
-- **Beard Oils** - Chattanooga Beard Co., Black Rebel Beard Co., Bevel, Honest Amish
-- **Affordable Barbers** - Gino's Classic, The Commodore, Trophy Room, Vista, Eclectic (Midtown)
-- **Thrift Stores** - Rag-O-Rama, The Lucky Exchange, Goodwill, Value Village, Lost-N-Found
-- **Fashion Tips & Coaching** - 2025 trends, personal styling tips, wardrobe building strategies
+## 🛠️ Technology Stack
 
-### 🚀 Coming Soon
-- **Fits** - Rate complete outfits and get style feedback
-- **Cuts** - Find and review Atlanta's best barbers
-- **Eats** - Discover hidden culinary gems across the 404
-- **Spots** - Explore secret shopping destinations
-
-## 🎨 Design
-
-**Color Palette:**
-- Primary: White & Tech Gold (#d4af37)
-- Secondary: Navy Blue (#1e3a5f)
-- Clean, modern gradient backgrounds
-- Premium gold accents throughout
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Pure HTML5, CSS3, JavaScript (Vanilla JS)
-- **Analytics**: Google Analytics (gtag.js)
-- **Payments**: Stripe Checkout
-- **Forms**: Google Forms integration
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Styling**: Custom CSS with gradient designs and responsive grid
+- **Analytics**: Google Analytics 4
 - **Hosting**: GitHub Pages
-- **Performance**: Optimized for mobile-first experience
+- **Forms**: Google Forms integration
 
-## 📊 Analytics Tracking
+## 🚀 Quick Start
 
-The site tracks:
-- Page views per category
-- Kicks rating submissions
-- Instagram share events
-- Premium checkout attempts
-- User zone preferences
-
-## 🚀 Getting Started
-
-### Live Site
-Visit: [https://mrcoppafield.github.io/Atl-Kick-Scout/](https://mrcoppafield.github.io/Atl-Kick-Scout/)
-
-### Local Development
+### Installation
+1. Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/mrcoppafield/Atl-Kick-Scout.git
-
-# Navigate to directory
-cd Atl-Kick-Scout
-
-# Open in browser
-open index.html
-# or
-python -m http.server 8000
-```
-
-## 📱 How to Use
-
-1. **Upload Your Kicks** - Click or drag & drop a photo of your sneakers
-2. **Select Your Zone** - Choose your Atlanta neighborhood
-3. **Get Rated** - Receive an instant 1-10 rating with zone-specific feedback
-4. **Share** - Post your rating to Instagram Stories
-5. **Explore Premium** - Unlock hidden gems and style tips for $4.99/mo
-
-## 💳 Premium Subscription
-
-- **Price**: $4.99/month
-- **Payment**: Secure Stripe Checkout
-- **Instant Access**: Content unlocks immediately after payment
-- **Cancel Anytime**: No long-term commitment
-
-[Subscribe to Premium](https://buy.stripe.com/bJe9ATbEkgfH66F6uaabK00)
-
-## 📝 Submission Guidelines
-
-Want to add your kicks to the permanent gallery?
-[Submit via Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeMaG3f646Sz4Wex0OuuyirYUWLp26g3kVqJJ8RqGGvSKwTvw/viewform)
-
-## 🗺️ Atlanta Zones
-
-- **Zone 1 (Bankhead)** - West Atlanta streetwear culture
-- **Zone 2 (Midtown)** - Urban professional style
-- **Zone 3 (Buckhead)** - Luxury fashion district
-- **Zone 4 (Decatur)** - Creative and eclectic vibes
-- **Zone 5 (Hapeville)** - Southside authenticity
-
-## 🤝 Contributing
-
-This is a solo project by [@mrcoppafield](https://instagram.com/mrcoppafield), but feedback and suggestions are always welcome!
-
-### Ways to Contribute:
-- Submit your kicks to the gallery
-- Share on social media with #ATLKICKSCOUT
-- Suggest new features or hidden gems
-- Report bugs or issues
-
-## 📄 License
-
-© 2025 mrcoppafield. All rights reserved.
-
-## 📞 Contact
-
-- **Instagram**: [@mrcoppafield](https://instagram.com/mrcoppafield)
-- **Website**: [ATL-KICK-SCOUT](https://mrcoppafield.github.io/Atl-Kick-Scout/)
-- **Issues**: [GitHub Issues](https://github.com/mrcoppafield/Atl-Kick-Scout/issues)
-
-## 🙏 Acknowledgments
-
-Built for ATL sneakerheads, by ATL sneakerheads. Special thanks to the Atlanta style community for inspiration and support.
-
----
-
-**Made with ❤️ in Atlanta**  
-*Scouting Atlanta's Best Since 2024*
